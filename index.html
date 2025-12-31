@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAHI - Own Your Path</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0?dev",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client?dev",
+          "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime?dev",
+          "@google/genai": "https://esm.sh/@google/genai",
+          "lucide-react": "https://esm.sh/lucide-react@0.263.1?external=react"
+        }
+      }
+    </script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            colors: {
+              wahi: {
+                lavender: '#E6E6FA',
+                lavenderDark: '#4A235A', 
+                teal: '#E0F2F1',
+                tealDark: '#004D40', 
+                coral: '#FFDAC1',
+                coralDark: '#873600', 
+                offWhite: '#FDFBF7',
+                // New additions
+                mint: '#E0F7FA', // Soft Mint Green
+                mintDark: '#00695C', // Dark Teal/Green for contrast
+                gold: '#FFF9C4', // Soft Gold/Yellow
+                goldDark: '#BF360C', // Dark Orange/Brown for contrast
+                peach: '#FFCCBC', // Soft Peach
+                peachDark: '#BF360C', // Deep Orange/Rust
+                sky: '#B3E5FC', // Light Sky Blue
+                skyDark: '#01579B', // Deep Blue
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
